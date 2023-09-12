@@ -1,0 +1,573 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+body{
+  width: 100%;
+  height: auto;
+  margin: 0 auto 50px;
+  background-color: gray;
+}
+body>h2{
+  text-align: center;
+  margin-top: 30px;
+  font-size: 30px;
+  font-family: monospace;
+  color: coral;
+  font-weight: bolder;
+  text-shadow: 2px -3px black;
+  scroll-margin: 80px;
+}
+.nav-bar{
+  width: 100%;
+  height: 70px;
+  background-color: rgba(0,0,0,.1); 
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  overflow: none;
+}
+#ulEl li a{
+  color: white;
+}
+.nav-bar img{
+  width: 50px;
+  height: 50px;
+  transition: 1s;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow:  1px 1px 1px coral,
+              -1px -1px 1px coral;
+}
+.nav-bar img:hover{
+  width: 55px;
+  height: 55px;
+}
+.nav-bar .login{
+  padding: 0 5px;
+  font-size: 20px;
+  border-radius: 5px;
+  color: white;
+  background-color: transparent;
+  box-shadow: 0 2px 2px white,
+              0 -2px 2px white;
+}
+.nav-bar .login:hover{
+  border: 1px solid coral;
+}
+.menu{
+  color: white;
+  font-size: 20px;
+  display: none;
+  z-index: 1;
+}
+.nav-bar #ulEl{
+  display: flex;
+  justify-content: space-between;
+}
+.nav-bar ul li{
+  padding: 0 8px;
+  font-size: 18px;
+  color: whitesmoke;
+}
+
+.nav-bar ul li:hover{
+  border: 1px solid coral;
+  border-radius: 5px;
+}
+body>img{
+  position: relative;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+}
+/* ------
+    photo gallery
+            ---------- */
+/* .gallery{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 80px;
+  left: 8%;
+  cursor: pointer;
+  font-family: cursive;
+}
+.gallery img{
+  width: 150px;
+  height: 150px;
+  border-radius: 10px;
+  box-shadow: 0 3px 4px white,
+              0 -3px 4px white,
+              0 2px 3px coral,
+              0 -2px 3px coral;
+}
+.gallery img:hover{
+  padding: 3px;
+}
+.gallery p{
+  color: white;
+  text-transform: capitalize;
+  background-color: rgba(0,0,0,.7);
+  width: 150px;
+  text-align: center;
+  border-radius: 0 0 5px 5px;
+  font-size: 12px;
+  position: absolute;
+  bottom: 5px;
+}
+.women{
+  left: 75%;
+}
+.set{
+  top: 60%;
+}
+.kids{
+  top: 60%;
+  left: 75%;
+}
+.office{
+  top: 60%;
+  left: 50%;
+  transform: translateX(-50%);
+} */
+.content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.content h1{
+  text-align: center;
+  font-size: 40px;
+  font-family: ultra-condensed;
+  color: coral;
+  width: 100%;
+  letter-spacing: 3px;
+  word-spacing: 3px;
+  margin: 10px 0;
+  text-shadow: 2px 2px black;
+  
+}
+.content a{
+  text-align: center;
+  padding: 0 10px;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  font-size: 18px;
+  font-family: cursive;
+  background: transparent;
+  border: 2px solid coral;
+  transition: .5s;
+}
+.content a:hover{
+  border: 1px solid white;
+  color: coral;
+  padding: 3px 14px;
+}
+
+/* ----------------------
+            features
+              ------------------ */
+
+.feature{
+  width: 100%;
+  height: auto;
+  margin: 0 auto 100px;
+  border: 2px sold coral;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: #948f8f;
+}
+.feature .gallery{
+  position: relative;
+  margin: 15px;
+}
+.feature img{
+  width: 180px;
+  height: 200px;
+  border-radius: 10px;
+  box-shadow: 0 3px 4px white,
+              0 -3px 4px white,
+              0 2px 3px coral,
+              0 -2px 3px coral;
+}
+.feature img:hover{
+  padding: 3px;
+}
+.feature p{
+  color: white;
+  text-transform: capitalize;
+  background-color: rgba(0,0,0,.7);
+  width: 180px;
+  text-align: center;
+  border-radius: 0 0 5px 5px;
+  font-size: 12px;
+  position: absolute;
+  bottom: 5px;
+}
+
+/* -------------
+   Contact Us
+      ------------ */
+#contact-us{
+  width: 100%;
+  height: auto;
+  margin: 10px auto;
+  padding: 20px 0;
+  background-color: #6f6d6d;
+}
+#contact-us div{
+  width: 95%;
+  margin: 0 auto;
+}
+#contact-us form{
+  position: relative;
+  width: 50%;
+  background:  #948f8f;
+  margin: 10px auto;
+  border-radius: 7px;
+  font-size: 20px;
+  box-shadow: 0 2px 4px white,
+              0 -2px 4px white;
+}
+#contact-us P{
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  
+}
+#contact-us P span{
+  color: white;
+}
+#contact-us div form table{
+  width: 100%;
+  height: 100%;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#contact-us div form .btn{
+  display: flex;
+  justify-content: center;
+}
+.btn input{
+  padding: 3px 0;
+  color: coral;
+  font-size: 20px;
+  margin: 10px;
+  width: 150px;
+  cursor: pointer;
+}
+
+input{
+  padding-left: 5px;
+  border-radius: 5px;
+  display: inline-block;
+  width: 80%;
+  height: 30px;
+  color: black;
+  font-size: 18px;
+  margin: 5px 0;
+}
+select{
+  margin: 10px 0;
+  font-size: 20px;
+}
+select option{
+  font-size: 20px;
+}
+textarea{
+  resize: none;
+  width: 90%;
+  height: 70px;
+  font-size: 20px;
+  padding-left: 5px;
+}
+input::placeholder, textarea::placeholder{
+  color: black;
+}
+.radio{
+  width: 15px;
+  height: 15px;
+}
+#contact-us b{
+  color: red;
+}
+
+/* ----------------- 
+      Login/Registration page
+      -----------------------  */
+#registration{
+  width: 80%;
+  margin: 10px auto 80px;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10px;
+}
+#login, #register{
+  background:  #948f8f;
+  width: 40%;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
+  border-radius: 7px;
+  font-size: 20px;
+  box-shadow: 0 2px 4px white,
+              0 -2px 4px white;
+}
+form p input{
+  width: 100%;
+  height: 40px;
+}
+form p button{
+  width: 40%;
+  font-size: 20px;
+}
+
+/* --------- 
+ about us
+    -------- */
+#about-us{
+  height: auto;
+  width: 90%;
+  margin: 0 auto;
+  padding: 20px 0;
+  box-shadow: 0 2px 4px white,
+              0 -2px 4px white;
+  font-size: 20px;
+}
+#about-us div{
+  width: 95%;
+  padding: 0 20px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: center;
+}
+#about-us ul, ol{
+  width: 300px;
+  margin: 5px;
+}
+#about-us ul li, #about-us ol li{
+  border: 1px white solid;
+  margin: 5px 0;
+  padding: 5px 10px;
+  background-color: lightgray;
+  border-radius: 5px;
+  cursor: pointer;
+}
+#about-us p{
+  font-size: 30px;
+  margin: 30px 0 10px;
+  text-shadow: 1px -2px white;
+}
+
+/*------------
+        footer and social icons
+                        --------------*/
+
+footer{
+  width: 95%;
+  height: auto;
+  border-radius: 10px;
+  background-color: rgba(0,0,0,.1);
+  margin: 20px auto;
+  padding: 20px 10px;
+  display: flex;
+  justify-content: space-around;
+}
+footer .foot{
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: space-between;
+  flex-wrap: wrap;
+  padding: 8px 0;
+  text-align: center;
+}
+footer .foot a{
+  font-size: 25px;
+  margin: 5px 0;
+  padding: 0 5px;
+  box-shadow: 0 1px 2px white,
+              0 -1px 2px white;
+}
+.foot a span{
+  color: white;
+}
+.foot a i, .phone-number a i{
+  color: coral;
+  padding-right: 5px;
+  margin: 10px 0;
+  
+}
+.foot a:hover{
+  box-shadow: 0 2px 6px white,
+              0 -2px 6px white;
+}
+.address{
+  text-align: center;
+  font-weight: bolder;
+  margin-top: 30px;
+}
+address b, .phone-number b{
+  color: coral;
+  padding: 3px 2px;
+  font-size: 25px;
+  text-decoration: underline;
+}
+address span{
+  color: white;
+  font-size: 18px;
+  padding: 3px 2px;
+  line-height: 2;
+}
+.phone-number{
+  text-align: center;
+  font-weight: bolder;
+  margin-top: 30px;
+}
+.phone-number a{
+  color: white;
+  font-size: 18px;
+  padding: 3px 2px;
+  line-height: 2;
+  text-decoration: underline;
+}
+
+/*--------- 
+        media query 
+            -------------*/
+
+@media (max-width: 800px){
+  .nav-bar .login{
+  font-size: 12px;
+  }
+  .nav-bar #ulEl{
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 40%;
+    height: 80vh;
+    padding: 60px 20px;
+    background: coral;
+  }
+  .nav-bar img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .nav-bar ul li{
+      padding-top: 10px;
+    }
+  .nav-bar ul li:hover{
+    color: black;
+    border: none;
+  }
+  .nav-bar .login{
+    font-size: 13;
+  }
+  .menu{
+    display: block;
+  }
+  .nav-bar img{
+    width: 40px;
+    height: 40px;
+  }
+
+  .content{
+    top: 50%;
+  }
+  .content h1{
+    font-size: 30px;
+  }
+  .content p{
+    font-size: 15px;
+  }
+  .feature img{
+    width: 150px;
+    height: 170px;
+  }
+  .feature p{
+    width: 150px;
+  }
+
+  .foot  span{
+    display: none;
+  }
+  footer b{
+    font-size: 20px;
+
+  }
+  .foot, .address, .phone-number{
+    border: 1px solid white;
+    border-radius: 3px;
+    margin: 0 2px;
+    width: 35%;
+    font-size: 20px;
+  }
+
+  /* 
+  ----------- 
+    contact-us
+        -----------  */
+  #contact-us form{
+    width: 90%;
+    padding-left: 5px;
+  }
+
+  
+  /* 
+  ----------- 
+    Login/register
+        -----------  */
+  #registration{
+    width: 100%;
+    flex-direction: column;
+    margin-top: 0;
+  }
+  #login, #register{
+    width: 90%;
+  }
+  #about-us{
+    height: 100vh;
+  }
+  #about-us ul, ol{
+  width: 90%;
+}
+}
+
+
+
+
+
+
+
+
+

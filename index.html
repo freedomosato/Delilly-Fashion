@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Delilly Fashion</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<body>
+  <div class="nav-bar">
+    <a href="javascript:void(0)," onclick="myLink()" class="menu"><i class="fa fa-bars"></i></a>
+    <a href="index.html"><img src="Delilly-Logo.jpg"></a>
+    <a href="#login-register" class="login"><i class="fa fa-user-o"></i> Login</a>
+    <ul id="ulEl">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#feature">Product</a></li>
+      <li><a href="#footer">Socials</a></li>
+      <li><a href="#contact">Contact Us</a></li>
+    </ul>
+  </div>
+  <img src="Delilly.jpg">
+  
+  <div class="content">
+    <h1>Delilly Fashion</h1>
+    <a href="#services"><marquee direction="left">Visit Us For More...</marquee></a>
+  </div>
+
+  
+  <h2 id="feature">Featured Photos</h2>
+  <p style="text-align: center; color: white; font-size: 20px; margin-bottom: 20px;">Click on the photos for more</p>
+  <div class="feature">
+    <div class="gallery women">
+      <a href="Gallery/gallery.html#women-photo">  <img src="image/women/lady4.jpg" class="women-photo" height="100" width="100" title="women styles">
+      </a>
+      <p>Women</p>
+    </div>
+    <div class="gallery men">
+        <a href="Gallery/gallery.html#men-photo"><img src="image/men/man2.jpg" class="women-photo" height="100" width="100" title="men styles"></a>
+        <p>Men</p>
+    </div>
+    <div class="gallery set">
+        <a href="Gallery/gallery.html#family-photo"><img src="image/set/set5.JPG" class="women-photo" height="100" width="100" title="Family Sets"></a>
+        <p>Family Sets</p>
+    </div>
+    <div class="gallery kids">
+        <a href="Gallery/gallery.html#kids-wear"><img src="image/kids/eseosa.jpg" class="women-photo" height="100" width="100" title="Kids Fashion"></a>
+        <p>Kids</p>
+    </div>
+    <div class="gallery office">
+        <a href="Gallery/gallery.html#office-wear"><img src="image/office/lady2.jpg" class="women-photo" height="100" width="100" title="Office wears"></a>
+        <p>Office wears</p>
+    </div>
+  </div>
+
+  <!-- -------------- 
+      contact Us
+           ----------- -->
+  <h2 id="contact"  style="margin-top: 150px;">Get in touch</h2>
+  <section id="contact-us">
+    <div>
+       <form action="">
+          <p><b>*</b><span> Compulsory</span></p>
+            <table>
+                <tr>
+                    <td><input type="text" placeholder="Firstname" title="" required><b>*</b></td>
+                </tr>
+                <tr>
+                    <td><input type="text" placeholder="Secondname" title=""required><b>*</b></td>
+                </tr>
+                <tr>
+                    <td><input type="text" placeholder="Middlename" title=""></td>
+                </tr>
+                <tr>
+                    <td><input type="email" name="email" id="" placeholder="Email" required><b>*</b></td>
+                </tr>
+                <tr>
+                    <td><input type="tel" name="tel" id="tel" placeholder="Mobile" required><b>*</b></td>
+                </tr>
+                <tr>
+                    <td>Gender <b>*</b>
+                        <input type="radio" class="radio" name="gender" id="" required> Male
+                        <input type="radio" class="radio" name="gender" id="" required> Female
+                    </td>
+                </tr>
+                <tr>
+                    <td>State of Residence <b>*</b>
+                    
+                      <select required>
+                        <option>Select one</option>
+                        <option>Lagos</option>
+                        <option>Edo</option>
+                      </select>
+                      
+                    </td>
+                </tr>
+                <tr class="textarea">
+                    <td><textarea name="test area" id="textarea" cols="30" rows="5" placeholder="Enquiry..." required></textarea><b>*</b></td>
+                </tr>
+            </table>
+            <div class="btn">
+                  <input type="submit" class="submit" value="Submit">
+                  <input class="submit" type="reset" value="Reset">
+            </div>
+        </form>
+    </div>
+  </section>
+
+
+
+
+  
+<!-------------- 
+     Login/Register
+         -------------->
+
+    <h2 id="login-register">Login/Rigister</h2>
+    <section id="registration">
+        <fieldset id="login">
+            <form action="" class="form" style="margin-top: 30%;" >
+                <p class="row">
+                    <input type="text" name="username" id="username"    
+                    placeholder="Username" required>
+                </p>
+                <p class="row">
+                    <input type="password" placeholder="Password" required minlength="4" maxlength="12">
+                </p>
+                <p>
+                  <button type="submit">Login</button>
+                  <button type="reset">Reset</button>
+                </p>
+            </form> 
+        </fieldset>
+        <fieldset id="register">
+            <form action="" class="form" style="margin-top: 10%;">
+                <p>
+                    <input type="text" placeholder="FirstName" required autocomplete="on">
+                </p>
+                <p>
+                    <input type="text" placeholder="LastName" autocomplete="on" required>
+                </p>
+                <p>
+                    <input type="text" placeholder="Username" autocomplete="on" required>
+                </p>
+                <p>
+                    <input type="text" placeholder="Email Address" required>
+                </p>
+                <p>
+                    <input type="password" placeholder="Passwrod" required>
+                </p>
+                <p>
+                    <input type="tel" placeholder="Phone Number" pattern="[0-9]{4}[0-9]{3}[0-9]{4}">
+                </p>
+                <p>
+                    <button type="submit">Register</button>
+                    <button type="reset">Reset</button>
+                </p>
+            </form>
+        </fieldset>
+    </section>
+  <h2 id="services" style="text-align: center;">Know More About Us</h2>
+  <section id="about-us" style="height: auto;">
+    <div style="text-align: left;">
+      <p>We are into:</p>
+      <ul>
+        <li>Laddies Wears</li>
+        <li>Men Wears</li>
+        <li>Kids Wears</li>
+        <li>Office Wears</li>
+        <li>Bonnets, Caps</li>
+        <li>Family Set</li>
+      </ul>
+      <p>We are also into:</p>
+      <ol>
+        <li>Bead making</li>
+        <li>Wire works</li>
+      </ol>
+        
+    </div>
+  </section>
+
+  <h2 id="footer"></h2>
+  <footer>
+    <div class="foot">
+      <a href="https://www.instagram.com/delillyfashion" target="_blank"><i class="fa fa-instagram"></i><span>Instagram</span></a>
+      <a href="https://www.facebook.com/delillyfashionbrands" target="_blank"><i class="fa fa-facebook"></i><span>Facebook</span></a>
+      <a href="https://www.twitter.com" target="_blank"><i class="fa fa-twitter"></i><span>Twitter</span></a>
+      <a href="https://www.pinterest.com" target="_blank"><i class="fa fa-pinterest"></i><span>Pinterest</span></a>
+      <a href="https://wa.me/2348115960140" target="_blank"><i class="fa fa-whatsapp"></i><span>WhatsApp</span></a>
+    </div>
+    <div class="address">
+      <address>
+        <b>Address: </b><br>
+        <span>Plot 28, Block 28, Hon. Adeyeni Str., A. I. T./RayPower Road,<br> Kola, Lagos, Nigeria</span>
+      </address>
+    </div>
+    <div class="phone-number" style="padding-top: 20px;">
+      <b>Call:</b><br>
+      <span><a href="tel:+2348115960140"><i class="fa fa-phone"></i> Call 1</a></span><br>
+      <span><a href="tel:+2348064652962"><i class="fa fa-phone"></i> Call 2</a></span><br>
+      <span><a href="mailto: rhodadilly6@gmail.com"><i class="fa fa-envelope-o"></i>  E-mail</a></span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>
