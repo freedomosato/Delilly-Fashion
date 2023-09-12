@@ -122,13 +122,25 @@ body>img{
   font-size: 18px;
   font-family: cursive;
   background: transparent;
-  border: 2px solid coral;
+  border: 2px solid white;
   transition: .5s;
 }
 .content a:hover{
   border: 2px solid white;
   color: coral;
   padding: 3px 14px;
+}
+.content p{
+  font-size: 30px;
+  color: white;
+  text-transform: capitalize;
+  margin-top: 30px;
+  padding: 3px 7px;
+  border-radius: 5px;
+  word-spacing: 3px;
+  background-color: rgba(0,0,0,.5);
+  box-shadow: 0 2px 2px white,
+              0 -2px 2px white;
 }
 
 /* ----------------------
