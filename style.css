@@ -126,7 +126,7 @@ body>img{
   transition: .5s;
 }
 .content a:hover{
-  border: 1px solid white;
+  border: 2px solid white;
   color: coral;
   padding: 3px 14px;
 }
@@ -200,8 +200,9 @@ body>img{
 }
 #contact-us P{
   position: absolute;
-  top: 20px;
+  top: -30px;
   right: 30px;
+  font-size: 14px;
   
 }
 #contact-us P span{
