@@ -12,7 +12,7 @@ function myLink(){
 let dateEl = document.getElementById("date")
 let timeEl = document.getElementById("time")
 
-function digitalDate(newDigital){
+function digitalDate(){
 let a = new Date();
 let d = a.getDay();
 let dt= a.getDate();
