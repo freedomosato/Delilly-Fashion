@@ -9,6 +9,10 @@ function myLink(){
   }
 }
 
+function interest(){
+  window.open("https://www.pinterest.com/delillyfashion", " ",)
+}
+
 let dateEl = document.getElementById("date")
 let timeEl = document.getElementById("time")
 

@@ -16,7 +16,7 @@ body{
   width: 100%;
   height: 70px;
   background-color:
-    rgba(0,0,0,.7);
+  rgba(0,0,0,.7);
   padding: 0 10px 0 20px;
   display: flex;
   justify-content: space-between;
@@ -26,7 +26,7 @@ body{
   left: 0;
   z-index: 1;
 }
-#ulEl li a{
+#ulElement li a{
   color: white;
 }
 .nav-bar img{
@@ -45,17 +45,17 @@ body{
 .nav-bar .search{
   width: 150px;
   height: 25px;
-  padding: 0 0 0 5px;
+  padding: 0 32px 0 5px;
   font-size: 17px;
   border-radius: 5px; 
   outline: none;
   border: 2px solid white;
-  color: black;
+  color: coral;
   box-shadow: 0 2px 2px white,
               0 -2px 2px white;
 }
 .nav-bar .search::placeholder{
-  color: coral;
+  color: black;
   font-size: 20px;
 }
 .nav-bar p{
@@ -65,7 +65,7 @@ body{
 }
 .nav-bar p i{
   position: absolute;
-  right: 0px;
+  right: 0;
   top: 50%;
   transform: translateY(-50%);
   cursor: pointer;
@@ -84,11 +84,11 @@ body{
   display: none;
   z-index: 1;
 }
-.nav-bar #ulEl{
+.nav-bar #ulElement{
   display: flex;
   justify-content: space-between;
 }
-#ulEl span{
+#ulElement span{
   color: white;
   font-size: 20px;
 }
@@ -99,13 +99,6 @@ body{
 
 .nav-bar ul li:hover{
   border: 1px solid coral;
-}
-body>img{
-  position: relative;
-  justify-content: center;
-  width: 90vw;
-  height: 90vh;
-  background-size: cover;
 }
 
   /*--- photo gallery---- */
@@ -185,15 +178,19 @@ hr{
   .nav-bar .search::placeholder{
     color: white;
   }
- .nav-bar #ulEl{
+ .nav-bar #ulElement{
     display: none;
     position: absolute;
-    top: 0;
+    top: 10px;
+   border-radius: 0 5px 5px 0;
     left: 0;
-    width: 40%;
+    width: 35%;
     height: 80vh;
     padding: 60px 20px;
     background: coral;
+  }
+  #ulElement span{
+    display: none;
   }
   .nav-bar img{
     position: absolute;
@@ -202,11 +199,10 @@ hr{
     transform: translate(-50%, -50%);
   }
   .nav-bar ul li{
-      padding-top: 10px;
-    }
-  .nav-bar ul li:hover{
-    color: black;
-    border: none;
+      padding: 10px 0;
+  }
+   #ulElement li a:hover{
+     color: rgba(255, 250, 255, 0.5);
   }
   .nav-bar .search{
     font-size: 13;

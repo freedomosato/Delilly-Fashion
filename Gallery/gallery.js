@@ -1,5 +1,6 @@
-function myLink(){
-  let ulEl = document.getElementById("ulEl")
+  let ulEl = document.querySelector("#ulElement")
+  console.log(ulEl)
+function myLinks(){
   
   if(ulEl.style.display === "block"){
     ulEl.style.display = "none"
